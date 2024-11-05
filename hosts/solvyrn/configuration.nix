@@ -43,7 +43,6 @@
 
 	# Define a user account. Don't forget to set a password with ‘passwd’.
 	users.users.leo = {
-		password = "wengL2007";
 		isNormalUser = true;
 		uid = 1000;
 		extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user.

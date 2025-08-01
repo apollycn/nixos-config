@@ -62,6 +62,7 @@
   users.users.leo = {
      isNormalUser = true;
      extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user.
+     hashedPasswordFile = "/etc/nixos/leo-password.txt";
   #   packages = with pkgs; [
   #     tree
   #   ];

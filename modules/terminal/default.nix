@@ -4,6 +4,6 @@
     imports = [
 	./foot.nix
 	./fish.nix
-	./starship.ni
+	./starship.nix
     ];
 }

@@ -139,19 +139,19 @@
 
 	    deno = {
 		format = " [deno](italic) [∫ $version](green bold)";
-		version_format = "${raw}";
+		version_format = "v$raw";
 	    };
 
 	    lua = {
 		format = " [lua](italic) [${symbol}${version}]($style)";
-		version_format = "${raw}";
+		version_format = "v$raw";
 		symbol = "⨀ ";
 		style = "bold bright-yellow";
 	    };
 
 	    nodejs = {
 		format = " [node](italic) [◫ ($version)](bold bright-green)";
-		version_format = "${raw}";
+		version_format = "v$raw";
 		detect_files = [ "package-lock.json" "yarn.lock" ];
 		detect_folders = [ "node_modules" ];
 		detect_extensions = [ 
@@ -168,27 +168,27 @@
 	    python = {
 		format = " [py](italic) [${symbol}${version}]($style)";
 		symbol = "[⌉](bold bright-blue)⌊ ";
-		version_format = "${raw}";
+		version_format = "v$raw";
 		style = "bold bright-yellow";
 	    };
 
 	    ruby = {
 		format = " [rb](italic) [${symbol}${version}]($style)";
 		symbol = "◆ ";
-		version_format = "${raw}";
+		version_format = "v$raw";
 		style = "bold red";
 	    };
 
 	    rust = {
 		format = " [rs](italic) [$symbol$version]($style)";
 		symbol = "⊃ ";
-		version_format = "${raw}";
+		version_format = "v$raw";
 		style = "bold red";
 	    };
 
 	    package = {
 		format = " [pkg](italic dimmed) [$symbol$version]($style)";
-		version_format = "${raw}";
+		version_format = "v$raw";
 		symbol = "◨ ";
 		style = "dimmed yellow italic bold";
 	    };
@@ -197,7 +197,7 @@
 		format = " [sw](italic) [${symbol}${version}]($style)";
 		symbol = "◁ ";
 		style = "bold bright-red";
-		version_format = "${raw}";
+		version_format = "v$raw";
 	    };
 
 	    aws = {

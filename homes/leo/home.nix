@@ -10,10 +10,8 @@
     home.stateVersion = "24.05";
 
     fonts.fontconfig.enable = true;
-    home.packages = with pkgs; [
-	hyprland
-	
-	(nerdfonts.override { fonts = ["FiraCode" "JetBrainsMono" "Melso" ]; })
+    home.packages = with pkgs; [	
+	(nerd-fonts.override { fonts = ["FiraCode" "JetBrainsMono" "Melso" ]; })
 	inter
 	roboto
     ];

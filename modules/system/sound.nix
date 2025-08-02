@@ -1,7 +1,7 @@
 { inputs, pkgs, ... }:
 
 {
-    services.pipwire = {
+    services.pipewire = {
 	enable = true;
 	pulse.enable = true;
     };

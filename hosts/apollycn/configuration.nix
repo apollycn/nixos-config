@@ -9,13 +9,13 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
 	../../modules/system/hyprland.nix
+	../../modules/system/graphics.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
- 
-  hardware.graphics.enable = true;
+
 
   networking.hostName = "apollycn"; # Define your hostname.
   # Pick only one of the below networking options.

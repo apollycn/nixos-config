@@ -15,6 +15,8 @@
 	    url = "github:Mic92/sops-nix";
 	    inputs.nixpkgs.follows = "nixpkgs";
 	};
+
+	hyprland.url = "github:hyprwm/Hyprland";
     };
 
     outputs = { self, nixpkgs, home-manager, nixos-hardware, sops-nix, ...}@inputs:

@@ -15,7 +15,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
  
-  hardware.opengl = {
+  hardware.graphics = {
 	enable = true;
 	driSupport32Bit = true;
   };

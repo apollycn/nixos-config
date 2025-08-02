@@ -11,10 +11,11 @@
 
     fonts.fontconfig.enable = true;
     home.packages = with pkgs; [
+	hyprland
+	
 	(nerdfonts.override { fonts = ["FiraCode" "JetBrainsMono" "Melso" ]; })
 	inter
 	roboto
-	ubuntu_font_family
     ];
 
     programs.home-manager.enable = true;

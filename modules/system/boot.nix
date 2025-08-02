@@ -3,6 +3,6 @@
 {
     boot.loader = {
 	systemd-boot.enable = true;
-	efit.canTouchEfiVariables = true;
+	efi.canTouchEfiVariables = true;
     };
 }

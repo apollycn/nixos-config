@@ -14,6 +14,10 @@
     home.packages = with pkgs; [	
 	inter
 	roboto
+	ubuntu_font_family
+	nerd-fonts.jetbrains-mono
+	
+	kitty
     ];
 
     programs.home-manager.enable = true;

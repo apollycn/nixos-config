@@ -14,6 +14,14 @@
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+ 
+  hardware.opengl = {
+	enable = true;
+	driSupport = true;
+	driSupport32Bit = true;
+  };
+
+  services.xserver.videroDrivers = [ "modesetting" ];
 
   networking.hostName = "apollycn"; # Define your hostname.
   # Pick only one of the below networking options.

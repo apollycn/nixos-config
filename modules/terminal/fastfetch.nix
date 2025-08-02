@@ -7,17 +7,6 @@
 	settings = {
 	    logo = null;
 
-	    display = {
-		seperator = " ";
-		color = "white";
-		constants = [
-		    "\u001b[37m"
-        	    "\u001b[38;5;16m"
-        	    "\u001b[38;5;17m"
-        	    "\u001b[38;5;18m"
-        	];
-	    };
-
 	    modules = [
 		"break"
 		{

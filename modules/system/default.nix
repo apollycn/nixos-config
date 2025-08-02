@@ -8,7 +8,6 @@
             ./boot.nix
 	    ./network.nix
 	    ./sound.nix
-	    ./users/default.nix
 	];
 
     time.timeZone = "America/New_York";

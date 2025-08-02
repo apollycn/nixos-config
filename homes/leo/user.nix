@@ -1,4 +1,4 @@
-{ inputs, pkgs, ,,, }:
+{ inputs, pkgs, ... }:
 
 {
     users.users.leo = {

@@ -17,7 +17,7 @@
 	ubuntu_font_family
 	nerd-fonts.jetbrains-mono
 	
-	kitty
+	fastfetch
     ];
 
     programs.home-manager.enable = true;

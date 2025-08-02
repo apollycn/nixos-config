@@ -3,7 +3,7 @@
 {
     users.users.leo = {
 	isNormalUser = true;
-	extraGroups = [ "wheel", "networkmanager" ];
+	extraGroups = [ "wheel" "networkmanager" ];
 	hashedPasswordFile = "/etc/nixos/leo-password.txt";
     };
 }

@@ -126,9 +126,9 @@
 		style = "bold italic bright-blue";
 		format = "([⎪$ahead_behind$staged$modified$untracked$renamed$deleted$conflicted$stashed⎥]($style))";
 		conflicted = "[◪◦](italic bright-magenta)";
-		ahead = "[▴│[${count}](bold white)│](italic green)";
-		behind = "[▿│[${count}](bold white)│](italic red)";
-		diverged = "[◇ ▴┤[${ahead_count}](regular white)│▿┤[${behind_count}](regular white)│](italic bright-magenta)";
+		ahead = "[▴│[$count](bold white)│](italic green)";
+		behind = "[▿│[$count](bold white)│](italic red)";
+		diverged = "[◇ ▴┤[$ahead_count](regular white)│▿┤[$behind_count](regular white)│](italic bright-magenta)";
 		untracked = "[◌◦](italic bright-yellow)";
 		stashed = "[◃◈](italic white)";
 		modified = "[●◦](italic yellow)";
@@ -143,7 +143,7 @@
 	    };
 
 	    lua = {
-		format = " [lua](italic) [${symbol}${version}]($style)";
+		format = " [lua](italic) [$symbol$version]($style)";
 		version_format = "v$raw";
 		symbol = "⨀ ";
 		style = "bold bright-yellow";
@@ -166,14 +166,14 @@
 	    };
 
 	    python = {
-		format = " [py](italic) [${symbol}${version}]($style)";
+		format = " [py](italic) [$symbol$version]($style)";
 		symbol = "[⌉](bold bright-blue)⌊ ";
 		version_format = "v$raw";
 		style = "bold bright-yellow";
 	    };
 
 	    ruby = {
-		format = " [rb](italic) [${symbol}${version}]($style)";
+		format = " [rb](italic) [$symbol$version]($style)";
 		symbol = "◆ ";
 		version_format = "v$raw";
 		style = "bold red";
@@ -194,7 +194,7 @@
 	    };
 
 	    swift = {
-		format = " [sw](italic) [${symbol}${version}]($style)";
+		format = " [sw](italic) [$symbol$version]($style)";
 		symbol = "◁ ";
 		style = "bold bright-red";
 		version_format = "v$raw";
@@ -254,7 +254,7 @@
 
 	    java = {
 		symbol = "∪ ";
-		format = " java [${symbol}(${version} )]($style)";
+		format = " java [$symbol($version )]($style)";
 	    };
 
 	    julia = {
@@ -264,7 +264,7 @@
 
 	    memory_usage = {
 		symbol = "▪▫▪ ";
-		format = " mem [${ram}( ${swap})]($style)";
+		format = " mem [$ram( $swap)]($style)";
 	    };
 
 	    nim = {

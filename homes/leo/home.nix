@@ -3,6 +3,7 @@
 {
     imports = [
 	../../modules/display/hyprland.nix
+	../../modules/terminal/default.nix
     ];
 
     home.username = "leo";
@@ -18,6 +19,7 @@
 	nerd-fonts.jetbrains-mono
 	
 	fastfetch
+	foot
     ];
 
     programs.home-manager.enable = true;

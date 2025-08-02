@@ -3,8 +3,8 @@
 	enable = true;
 	xwayland.enable = true;
 	systemd.enable = true;
-	package = null;
-	portalPackage = null;
+	package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+	portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
 
 	settings = {
 	    "$mod" = "SUPER";

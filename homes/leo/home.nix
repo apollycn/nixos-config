@@ -17,9 +17,6 @@
 	roboto
 	ubuntu_font_family
 	nerd-fonts.jetbrains-mono
-	
-	fastfetch
-	foot
     ];
 
     programs.home-manager.enable = true;

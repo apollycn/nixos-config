@@ -16,7 +16,7 @@
 	
 	    character = {
 		format = "$symbol ";
-		success_symbol "[◎](bold italic bright-yellow)";
+		success_symbol = "[◎](bold italic bright-yellow)";
 		error_symbol = "[○](italic purple)";
 		vimcmd_symbol = "[■](italic dimmed green)";
 		vimcmd_replace_one_symbol = "◌";

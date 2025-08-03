@@ -5,7 +5,10 @@
 	enable = true;
 	
 	settings = {
-	    logo = null;
+	    logo = {
+		type = "auto";
+		color = true;
+	    };
 
 	    modules = [
 		"break"

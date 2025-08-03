@@ -15,8 +15,8 @@
       		}
       		{
         	    type = "kernel";
-        	    key = "│ \${2}\${1}  kernel";
-        	    format = "\${2}{release>22}\${1} │";
+        	    key = "│ \u001b[38;5;16m \u001b[37m  kernel";
+        	    format = "\u001b[38;5;16m{release>22}\u001b[37m │";
      	 	}
       		{
         	    type = "command";
@@ -26,14 +26,14 @@
       		}
       		{
         	    type = "shell";
-        	    key = "│ \${2}\${1}  shell ";
-        	    format = "\${2}{pretty-name>22}\${1} │";
+        	    key = "│ \u001b[38;5;16m \u001b[37m  shell ";
+        	    format = "\u001b[38;5;16m{pretty-name>22}\u001b[37m │";
       		}
       		{
         	    type = "command";
-        	    key = "│ \${3}\${1}  mem   ";
+        	    key = "│ \u001b[38;5;17m \u001b[37m  mem   ";
 		    text = "free -m | awk 'NR==2{printf \"%.2f GiB / %.2f GiB\",$3/1024,$2/1024}'";
-                    format = "\${3}{>22}\${1} │";
+                    format = "\u001b[38;5;17m{>22}\u001b[37m │";
       		}
       		{
         	    type = "packages";
@@ -42,9 +42,9 @@
       		}
       		{
         	    type = "command";
-        	    key = "│ \${2}\${1}  user  ";
+        	    key = "│ \u001b[38;5;16m\u001b[37m  user  ";
         	    text = "echo $USER";
-        	    format = "\${2}{>22}\${1} │";
+        	    format = "\u001b[38;5;16m{>22}\u001b[37m │";
       		}
       		{
         	    type = "command";
@@ -54,8 +54,8 @@
       		}
       		{
         	    type = "os";
-        	    key = "│ \${4}󰻀\${1}  distro";
-        	    format = "\${4}{pretty-name>22}\${1} │";
+        	    key = "│ \u001b[38;5;18m󰻀\u001b[37m  distro";
+        	    format = "\u001b[38;5;18m{pretty-name>22}\u001b[37m │";
       		}
       		{
         	    type = "custom";

@@ -7,7 +7,7 @@
 	settings = {
 	    logo = {
 		type = "auto";
-		color = true;
+		color = "white";
 	    };
 
 	    modules = [

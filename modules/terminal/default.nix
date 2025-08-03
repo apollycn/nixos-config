@@ -3,7 +3,7 @@
 {
     imports = [
 	./foot.nix
-	./fish.nix
+	./fish/default.nix
 	./starship.nix
 	./fastfetch.nix
     ];

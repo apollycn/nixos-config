@@ -5,7 +5,7 @@
 	enable = true;
 
 	shellAliases = import ./aliases.nix;
-	function = import ./functions.nix { inherit pkgs lib; };
+	functions = import ./functions.nix { inherit pkgs lib; };
 
 	shellInit = ''
 	    set -g fish_greeting

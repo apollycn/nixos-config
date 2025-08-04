@@ -8,13 +8,6 @@
 	    ../../homes/default.nix
         ];
    
-    environment.systemPackages = with pkgs; [
-	vim
-        wget
-        git
-        firefox
-    ];
- 
     system.stateVersion = "25.05";
 }
 

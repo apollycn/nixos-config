@@ -23,6 +23,7 @@
 	options = "--delete-older-than 14d";
     };
 
+    nix.optimise.automatic = true;
     nix.settings.auto-optimize-store = true;
 
     environment.systemPackages = with pkgs; [

@@ -9,14 +9,9 @@
 	    inputs.nixpkgs.follows = "nixpkgs";
 	};
 
-	nixos-hardware.url = "github:NixOs/nixos-hardware/master";
-	
-	sops-nix = {
-	    url = "github:Mic92/sops-nix";
-	    inputs.nixpkgs.follows = "nixpkgs";
-	};
-
-	hyprland.url = "github:hyprwm/Hyprland";
+	rust-overlay.url = "github:oxalica/rust-overlay";
+        wezterm.url = "github:wez/wezterm?dir=nix";
+        radicle-tui.url = "git+https://seed.radicle.xyz/z39mP9rQAaGmERfUMPULfPUi473tY.git";
     };
 
     outputs = { self, nixpkgs, home-manager, nixos-hardware, sops-nix, ...}@inputs:

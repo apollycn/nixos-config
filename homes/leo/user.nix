@@ -1,9 +1,17 @@
-{ inputs, pkgs, ... }:
+{ pkgs, ... }:
 
 {
     users.users.leo = {
 	isNormalUser = true;
-	extraGroups = [ "wheel" "networkmanager" ];
+	extraGroups = [ 
+	    "wheel" 
+	    "networkmanager" 
+	    "input"  
+	    "video"
+	    "audio"
+	    "tss"
+	];
+	shell = pkgs.fish;
 	hashedPasswordFile = "/etc/nixos/leo-password.txt";
     };
 }

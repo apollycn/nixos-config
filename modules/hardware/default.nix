@@ -5,5 +5,6 @@
 	./bluetooth.nix
 	./graphics.nix
 	./printing.nix
+	./brightness.nix
     ];
 }

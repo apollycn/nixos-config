@@ -11,5 +11,6 @@
 	./fail2ban.nix
 	./firejail.nix
 	./tools.nix
+	./yubikey.nix
     ];
 }

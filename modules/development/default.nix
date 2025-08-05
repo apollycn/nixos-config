@@ -5,5 +5,6 @@
 	./lsp.nix
 	./programming-languages.nix
 	./radicle.nix
+	./virtualization.nix
     ];
 }

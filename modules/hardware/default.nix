@@ -6,5 +6,6 @@
 	./graphics.nix
 	./printing.nix
 	./brightness.nix
+	./sound.nix
     ];
 }

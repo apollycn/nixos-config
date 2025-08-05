@@ -6,5 +6,6 @@
 	./wireless.nix
 	./mosh.nix
 	./open-ssh.nix
+	./vpn.nix
     ];
 }

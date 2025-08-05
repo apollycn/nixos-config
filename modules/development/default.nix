@@ -6,5 +6,6 @@
 	./programming-languages.nix
 	./radicle.nix
 	./virtualization.nix
+	./wasm.nix
     ];
 }

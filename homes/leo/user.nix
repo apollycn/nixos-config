@@ -11,7 +11,7 @@
 	    "audio"
 	    "tss"
 	];
-	shell = pkgs.fish;
-	hashedPasswordFile = "/etc/nixos/leo-password.txt";
+	# shell = pkgs.fish;
+	hashedPassword = "";
     };
 }

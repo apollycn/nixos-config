@@ -11,7 +11,7 @@
 	flake = "~/nixos-config";
 	flags = [
 	    "--update-input" "nixpkgs"
-	    "--update-input" "rust-overlay"
+	    #"--update-input" "rust-overlay"
 	    "--commit-lock-file"
 	];
 	dates = "weekly";
@@ -24,7 +24,7 @@
     };
 
     nix.optimise.automatic = true;
-    nix.settings.auto-optimize-store = true;
+    nix.settings.auto-optimise-store = true;
 
     environment.systemPackages = with pkgs; [
 	topgrade

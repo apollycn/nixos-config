@@ -2,19 +2,20 @@
     description = "NixOS Configuration";
     
     inputs = {
-	nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+	nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+	nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 	
 	home-manager = {
 	    url = "github:nix-community/home-manager";
 	    inputs.nixpkgs.follows = "nixpkgs";
 	};
 
-	rust-overlay.url = "github:oxalica/rust-overlay";
-        wezterm.url = "github:wez/wezterm?dir=nix";
-        radicle-tui.url = "git+https://seed.radicle.xyz/z39mP9rQAaGmERfUMPULfPUi473tY.git";
+	# rust-overlay.url = "github:oxalica/rust-overlay";
+        # wezterm.url = "github:wez/wezterm?dir=nix";
+        # radicle-tui.url = "git+https://seed.radicle.xyz/z39mP9rQAaGmERfUMPULfPUi473tY.git";
     };
 
-    outputs = { self, nixpkgs, home-manager, nixos-hardware, sops-nix, ...}@inputs:
+    outputs = { self, nixpkgs, home-manager, ...}@inputs:
 	let 
 	    system = "x86_64-linux";
 	    mkSystem = hostname: username: nixpkgs.lib.nixosSystem {
@@ -22,8 +23,6 @@
 		specialArgs = { inherit inputs hostname username; };
 		modules = [
 		    ./hosts/${hostname}/configuration.nix
-
-		    sops-nix.nixosModules.sops
 		
 		    home-manager.nixosModules.home-manager
 		    {

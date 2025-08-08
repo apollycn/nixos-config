@@ -10,12 +10,8 @@
     home.stateVersion = "24.05";
 
     home.packages = with pkgs; [
-	spotify
-	youtube-music
-	discord
-	tdesktop
-	vscodium
-	brave
+	git
+	vim
     ];
 
     programs.home-manager.enable = true;

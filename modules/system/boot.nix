@@ -11,7 +11,15 @@
 	enable = true;
 	verbose = false;
 	systemd.enable = true;
-	availableKernelModules = [ "i915" ];
+	availableKernelModules = [ 
+	    "xhci_pci"
+	    "ehci_pci"
+	    "ahci"
+	    "usbhid"
+	    "usb_storage"
+	    "sd_mod"
+	    "i915"
+	];
 	kernelModules = [ "i915" ];
     };
 

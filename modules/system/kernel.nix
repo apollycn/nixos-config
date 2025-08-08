@@ -16,9 +16,9 @@
     	"fbcon=nodefer"
     	"vt.global_cursor_default=0"
         # "kernel.modules_disabled=1"
-        "lsm=landlock,lockdown,yama,integrity,apparmor,bpf"
+        "lsm=landlock,lockdown,yama,integrity,bpf"
         "usbcore.autosuspend=-1"
-        "video4linux"
+        # "video4linux"
         "acpi_rev_override=5"
     ];
 }

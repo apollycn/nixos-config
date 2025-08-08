@@ -20,6 +20,5 @@
 
     environment.systemPackages = with pkgs; [
 	iwgtk
-	impala
     ];
 }

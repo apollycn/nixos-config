@@ -5,6 +5,6 @@
     hardware.bluetooth.powerOnBoot = false;
     
     environment.systemPackages = with pkgs; [
-	overscride
+	overskride
     ];
 }

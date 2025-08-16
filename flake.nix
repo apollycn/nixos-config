@@ -10,6 +10,8 @@
 	    inputs.nixpkgs.follows = "nixpkgs";
 	};
 
+	hyprland.url = "github:hyprwm/Hyprland";
+
 	# rust-overlay.url = "github:oxalica/rust-overlay";
         # wezterm.url = "github:wez/wezterm?dir=nix";
         # radicle-tui.url = "git+https://seed.radicle.xyz/z39mP9rQAaGmERfUMPULfPUi473tY.git";

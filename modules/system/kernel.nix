@@ -6,7 +6,7 @@
     # security.protectKernelImage = true;
     security.unprivilegedUsernsClone = true;
     security.virtualisation.flushL1DataCache = "cond";
-    boot.kernelPackages = pkgs.linuxKernel.packages.linux_zen;
+    # boot.kernelPackages = pkgs.linuxKernel.packages.linux_zen;
     boot.kernelParams = [ 
     	"quiet"
     	"splash"

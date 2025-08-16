@@ -20,7 +20,7 @@
 	hyprlock
 	hypridle
 	hyprpaper
-	hyprpokitagent
+	hyprpolkitagent
 
 	inputs.wezterm.packages.${pkgs.system}.default
 	kitty

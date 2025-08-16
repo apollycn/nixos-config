@@ -8,10 +8,10 @@
     services.dbus = {
         enable = true;
         implementation = "broker";
-        packages = with pkgs; [
-            xfce.xfconf
-            gnome2.GConf
-        ];
+        # packages = with pkgs; [
+        #     xfce.xfconf
+        #     gnome2.GConf
+        # ];
     };
 
     # Music Player Daemon

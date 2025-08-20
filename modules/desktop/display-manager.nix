@@ -4,7 +4,7 @@
     services.greetd = {
 	enable = true;
 	settings = {
-	    command = "${pkgs.tuigreet}/bin/tuigreet \
+	    command = "${pkgs.greetd.tuigreet} \
                 --time --time-format '%I:%M %p | %a • %h | %F' \
           	--cmd 'uwsm start hyprland'";
 	    user = "greeter";

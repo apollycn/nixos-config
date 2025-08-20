@@ -22,7 +22,5 @@
     environment.systemPackages = with pkgs; [
     	nuspell
     	hyphen
-    	hunspell
-    	hunspellDicts.en_US
     ];
 }

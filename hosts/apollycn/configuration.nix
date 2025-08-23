@@ -12,6 +12,7 @@
     	../../modules/environment/default.nix
 	../../modules/development/default.nix
 	../../modules/tools/default.nix
+	../../modules/services/default.nix
 	
     ];
     

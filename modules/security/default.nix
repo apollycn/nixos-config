@@ -4,7 +4,7 @@
     imports = [
 	# ./clamav.nix
 	./firewall.nix
-	./mac-randomization.nix
+	# ./mac-randomization.nix
 	./sudo.nix
 	./tpm2.nix
 	./apparmor.nix

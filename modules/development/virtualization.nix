@@ -45,7 +45,6 @@
 
     	distrobox
     	qemu
-    	lima
 
     	podman-compose
     	podman-tui

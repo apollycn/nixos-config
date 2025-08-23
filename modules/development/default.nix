@@ -4,8 +4,8 @@
     imports = [
 	./lsp.nix
 	./programming-languages.nix
-	./radicle.nix
+	# ./radicle.nix
 	./virtualization.nix
-	./wasm.nix
+	# ./wasm.nix
     ];
 }

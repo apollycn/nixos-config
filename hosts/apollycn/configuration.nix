@@ -10,6 +10,7 @@
 	../../modules/hardware/default.nix
 	../../modules/desktop/default.nix
     	../../modules/environment/default.nix
+	../../modules/development/default.nix
 	
     ];
     

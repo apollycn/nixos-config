@@ -12,6 +12,7 @@
     home.packages = with pkgs; [
 	git
 	vim
+	firefox
     ];
 
     programs.home-manager.enable = true;

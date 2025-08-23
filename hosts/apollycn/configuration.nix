@@ -11,6 +11,7 @@
 	../../modules/desktop/default.nix
     	../../modules/environment/default.nix
 	../../modules/development/default.nix
+	../../modules/tools/default.nix
 	
     ];
     

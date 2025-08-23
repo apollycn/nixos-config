@@ -18,6 +18,7 @@
     	docker-compose-language-service
     	vscode-extensions.vadimcn.vscode-lldb
     	hyprls
-    	helix-gpt
+    	jdk11
+	helix-gpt
     ]; 
 }

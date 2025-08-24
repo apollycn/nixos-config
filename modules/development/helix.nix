@@ -59,11 +59,6 @@
                 "A-w" = ":w";
                 "A-r" = ":rl";
             };
-
-            indent = {
-                tab-width = 4;
-                unit = " ";
-            };
         };
         
         languages = {

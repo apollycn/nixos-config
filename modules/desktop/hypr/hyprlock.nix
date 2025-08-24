@@ -27,7 +27,7 @@
             # Now define all the elements that use variables
             background {
                 monitor = 
-                path = ./assets/background
+                path = ~/nixos-config/modules/desktop/hypr/assets/background
                 blur_passes = 2
                 color = $base
             }
@@ -75,7 +75,7 @@
             # USER AVATAR
             image {
                 monitor = 
-                path = ./assets/avatar.png
+                path = ~/nixos-config/modules/desktop/hypr/assets/avatar.png
                 size = 350
                 border_color = $accent
                 rounding = -1

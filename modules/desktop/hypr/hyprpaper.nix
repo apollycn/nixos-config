@@ -9,11 +9,11 @@
             ipc = false;
 
             preload = [
-                "~/Downloads/background"
+                "~/nixos-config/modules/desktop/hypr/assets/background"
             ];
 
             wallpaper = [
-                ",~/Downloads/background"
+                ",~/nixos-config/modules/desktop/hypr/assets/background"
             ];
         };
     };   

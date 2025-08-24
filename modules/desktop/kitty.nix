@@ -57,6 +57,8 @@
             mark3_foreground        = "#24273a";
             mark3_background        = "#7dc4e4";
 
+            window_padding_width = 10;
+            
             # 16 terminal colors
             color0  = "#494d64";
             color8  = "#5b6078";

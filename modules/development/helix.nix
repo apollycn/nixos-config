@@ -25,7 +25,7 @@
                     render = true;
                 };
 
-                indent.tab-width = 4;
+                tab-width = 4;
                 
                 statusline = {
                     left = ["mode" "spinner" "file-name" "read-only-indicator" "file-modification-indicator" "separator" "total-line-numbers" "separator" "spacer" "version-control"];

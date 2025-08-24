@@ -11,13 +11,16 @@
 	  		};
 
 	  		hyprland.url = "github:hyprwm/Hyprland";
-
+        spicetify-nix = {
+            url = "github:Gerg-L/spicetify-nix";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
 	  		# rust-overlay.url = "github:oxalica/rust-overlay";
         wezterm.url = "github:wez/wezterm?dir=nix";
         # radicle-tui.url = "git+https://seed.radicle.xyz/z39mP9rQAaGmERfUMPULfPUi473tY.git";
     };
 
-    outputs = { self, nixpkgs, home-manager, ...}@inputs:
+    outputs = { self, nixpkgs, home-manager, spicetify-nix, ...}@inputs:
   	let 
 	      system = "x86_64-linux";
 	      mkSystem = hostname: username: nixpkgs.lib.nixosSystem {
@@ -36,6 +39,8 @@
 			    							users.${username} = import ./homes/${username}/home.nix;
 										};
 		    				}
+
+		    				spicetify-nix.homeManagerModules.default
 					  ];
 				};
     in

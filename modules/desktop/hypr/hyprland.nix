@@ -7,7 +7,7 @@
         settings = {
             # Monitor configuration
             monitor = [
-                "eDP-1,preferred,auto,auto"
+                "eDP-1,preferred,auto,1.6"
                 # "HDMI-A-1,preferred,auto-up,1.6"  # Comment out if not using external monitor
             ];
 
@@ -40,6 +40,7 @@
             exec-once = [
                 "fish -c autostart"
                 "pypr"
+                "waybar"
             ];
 
             # Environment variables

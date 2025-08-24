@@ -2,8 +2,8 @@
 
 {
     imports = [
-        ../../modules/desktop/hypr/home.nix
-            
+        ../../modules/desktop/home.nixt    
+
     ];
 
     home.username = "leo";

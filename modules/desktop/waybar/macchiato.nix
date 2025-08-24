@@ -1,7 +1,7 @@
 { ... }:
 
 {
-    xdg.configFile."waybar/macchiato.conf".text = ''
+    xdg.configFile."waybar/macchiato.css".text = ''
         @define-color base   #24273a;
         @define-color mantle #1e2030;
         @define-color crust  #181926;

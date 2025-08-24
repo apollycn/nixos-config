@@ -3,7 +3,7 @@
 {
     xdg.configFile."aichat/roles/to-emoji.md".text = ''
         ---
-        model: deepseek:deepseek-chat
+        temperature: 0.7
 
         ---
         # Emoji Conversion Prompt

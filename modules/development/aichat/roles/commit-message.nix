@@ -3,7 +3,7 @@
 {
   xdg.configFile."aichat/roles/commit-message.md".text = ''
     ---
-    model: deepseek:deepseek-chat
+    temperature: 0.7
     ---
     You are an expert in Git commit messages and Conventional Commits specification. Your task is to generate a well-formatted commit message based on the provided code changes, following these guidelines:
 

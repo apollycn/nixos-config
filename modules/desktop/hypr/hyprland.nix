@@ -78,7 +78,7 @@
                 };
                 shadow = {
                     enabled = true;
-                    range = 15;
+                    range = 10;
                     render_power = 3;
                     offset = "0, 0";
                     # Colors moved to extraConfig since they use variables

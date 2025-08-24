@@ -2,8 +2,8 @@
 
 {
     programs.hyprland = {
-	enable = true;
-	withUWSM = true;
+	      enable = true;
+	      withUWSM = true;
     };
 
     environment.sessionVariables.NIXOS_OZONE_WL = "1";
@@ -13,25 +13,25 @@
     services.hypridle.enable = true;
 
     environment.systemPackages = with pkgs; [
-	pyprland
-	hyprpicker
-	hyprpicker
-	hyprcursor
-	hyprlock
-	hypridle
-	hyprpaper
-	hyprpolkitagent
+	      pyprland
+	      hyprpicker
+	      hyprpicker
+	      hyprcursor
+	      hyprlock
+	      hypridle
+	      hyprpaper
+	      hyprpolkitagent
 
-	# inputs.wezterm.packages.${pkgs.system}.default
-	kitty
-	cool-retro-term
+	      inputs.wezterm.packages.${pkgs.system}.default
+	      kitty
+	      cool-retro-term
 
-	starship
-	helix
+	      starship
+	      helix
 
-	qutebrowser
-	zathura
-	mpv
-	imv
+	      qutebrowser
+	      zathura
+	      mpv
+	      imv
     ];
 }

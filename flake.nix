@@ -2,48 +2,49 @@
     description = "NixOS Configuration";
     
     inputs = {
-	nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-	nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-25.05";
+	  		nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+	  		nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-25.05";
 	
-	home-manager = {
-	    url = "github:nix-community/home-manager";
-	    inputs.nixpkgs.follows = "nixpkgs";
-	};
+	  		home-manager = {
+	      		url = "github:nix-community/home-manager";
+	      		inputs.nixpkgs.follows = "nixpkgs";
+	  		};
 
-	hyprland.url = "github:hyprwm/Hyprland";
+	  		hyprland.url = "github:hyprwm/Hyprland";
 
-	# rust-overlay.url = "github:oxalica/rust-overlay";
+	  		# rust-overlay.url = "github:oxalica/rust-overlay";
         # wezterm.url = "github:wez/wezterm?dir=nix";
         # radicle-tui.url = "git+https://seed.radicle.xyz/z39mP9rQAaGmERfUMPULfPUi473tY.git";
     };
 
     outputs = { self, nixpkgs, home-manager, ...}@inputs:
-	let 
-	    system = "x86_64-linux";
-	    mkSystem = hostname: username: nixpkgs.lib.nixosSystem {
-		inherit system;
-		specialArgs = { inherit inputs hostname username; };
-		modules = [
-		    ./hosts/${hostname}/configuration.nix
+  	let 
+	      system = "x86_64-linux";
+	      mkSystem = hostname: username: nixpkgs.lib.nixosSystem {
+		    		inherit system;
+						specialArgs = { inherit inputs hostname username; };
+						modules = [
+		    				./hosts/${hostname}/configuration.nix
 		
-		    home-manager.nixosModules.home-manager
-		    {
-			home-manager = {
-			    useGlobalPkgs = true;
-			    useUserPackages = true;
-			    extraSpecialArgs = { inherit inputs hostname username; };
-			    users.${username} = import ./homes/${username}/home.nix;
-			};
-		    }
-		];
-	    };
-	in
-	{
-	    nixosConfigurations = {
-		"apollycn" = mkSystem "apollycn" "leo";
-		"solvyrn" = mkSystem "solvyrn" "leo";
-	    };
+		    				home-manager.nixosModules.home-manager
+		    				{
+										home-manager = {
+												backupFileExtension = "backup";
+			    							useGlobalPkgs = true;
+			    							useUserPackages = true;
+			    							extraSpecialArgs = { inherit inputs hostname username; };
+			    							users.${username} = import ./homes/${username}/home.nix;
+										};
+		    				}
+					  ];
+				};
+    in
+		{
+	  		nixosConfigurations = {
+						"apollycn" = mkSystem "apollycn" "leo";
+						"solvyrn" = mkSystem "solvyrn" "leo";
+	  		};
 		
-	    formatter.${system} = nixpkgs.legacyPackages.${system}.nixfmt-tree;
-	};  
+	    	formatter.${system} = nixpkgs.legacyPackages.${system}.nixfmt-tree;
+		};  
 }

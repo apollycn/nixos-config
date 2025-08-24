@@ -75,7 +75,7 @@
             # USER AVATAR
             image {
                 monitor = 
-                path = ~/nixos-config/modules/desktop/hypr/assets/avatar.png
+                path = ~/nixos-config/modules/desktop/hypr/assets/avatar.face
                 size = 350
                 border_color = $accent
                 rounding = -1

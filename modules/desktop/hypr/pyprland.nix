@@ -12,7 +12,7 @@
         ]
         
         [scratchpads.term]
-        command = "wezterm start --always-new-process --class wezterm_dropdown"        command = "wezterm start --always-new-process"
+        command = "wezterm start --always-new-process --class wezterm_dropdown"
         class = "wezterm_dropdown"
         animation = "fromTop"
         unfocus = "hide"

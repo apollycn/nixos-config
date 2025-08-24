@@ -1,8 +1,9 @@
-{ config, pkgs, ...  }:
+{ pkgs, ...  }:
 
 {
     imports = [
-    
+        ../../modules/desktop/hypr/home.nix
+            
     ];
 
     home.username = "leo";
@@ -10,9 +11,9 @@
     home.stateVersion = "24.05";
 
     home.packages = with pkgs; [
-	git
-	vim
-	firefox
+	      git
+	      vim
+	      firefox
     ];
 
     programs.home-manager.enable = true;

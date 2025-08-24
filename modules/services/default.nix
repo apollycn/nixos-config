@@ -2,7 +2,8 @@
 
 {
     imports = [
-	./llm.nix
-	./location.nix
+	      ./llm.nix
+	      ./location.nix
+        ./spicetify.nix
     ];
 }

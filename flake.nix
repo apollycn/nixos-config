@@ -39,8 +39,6 @@
 			    							users.${username} = import ./homes/${username}/home.nix;
 										};
 		    				}
-
-		    				spicetify-nix.homeManagerModules.default
 					  ];
 				};
     in

@@ -3,7 +3,7 @@
 {
     imports = [
         ./qutebrowser.nix
-        # ./spicetify.nix
+        ./spicetify.nix
         
     ];
 }

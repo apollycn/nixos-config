@@ -7,7 +7,7 @@
   
     # Configure aichat
     xdg.configFile."aichat/config.yaml".text = '' 
-        model: ollama:gemma3:4b
+        model: ollama:gemma3n:e4b
         keybindings: vi
         function_calling: true
         rag_embedding_model: nomic-embed-text:latest

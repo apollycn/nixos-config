@@ -6,6 +6,7 @@
         ./waybar/home.nix
         ./pointer.nix
         ./terminal/home.nix
-                        
+        ./dunst.nix
+                                
     ];
 }

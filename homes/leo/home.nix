@@ -14,7 +14,6 @@
     home.packages = with pkgs; [
 	      git
 	      vim
-	      grapejuice
     ];
 
     programs.home-manager.enable = true;

@@ -33,6 +33,9 @@
             ngc = "sudo nix-collect-garbage -d";
             ngc7 = "sudo nix-collect-garbage --delete-older-than 7d";
             ngc14 = "sudo nix-collect-garbage --delete-older-than 14d";
+            ll = "eza -la --icons --group-directories-first";
+            lt = "eza -la --icons --tree --level=2";
+            lg = "eza -la --icons --git";
         };
 
         # Interactive shell initialization

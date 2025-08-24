@@ -17,5 +17,6 @@
     	rsclock
     	cava
 	unzip
+	eza
     ];
 }

@@ -4,6 +4,8 @@
     imports = [
         ./hyprland.nix
         ./macchiato.nix
-        ./hypridle.nix  
+        ./hypridle.nix
+        ./hyprlock.nix
+          
     ];
 }

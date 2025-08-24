@@ -133,6 +133,7 @@
             wifi_toggle = builtins.readFile ./functions/wifi_toggle.fish;
             wlogout_unique = builtins.readFile ./functions/wlogout_unique.fish;
         };
+    };
 
     programs.zoxide = {
         enable = true;

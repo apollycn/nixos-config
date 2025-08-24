@@ -27,7 +27,7 @@
             # Now define all the elements that use variables
             background {
                 monitor = 
-                path = $HOME/background
+                path = $HOME/Downloads/background
                 blur_passes = 2
                 color = $base
             }
@@ -75,7 +75,7 @@
             # USER AVATAR
             image {
                 monitor = 
-                path = $HOME/.face
+                path = $HOME/Downloads/.face
                 size = 350
                 border_color = $accent
                 rounding = -1

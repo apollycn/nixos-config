@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   imports = [
@@ -52,7 +52,7 @@
       - type: openai-compatible
         name: deepseek
         api_base: https://api.deepseek.com/v1
-        api_key: $DEEPSEEK_API_KEY
+        api_key: "sk-c8188b0357aa4fbbac0c09f2bdad3114"
         models:
           - name: deepseek-chat
             max_input_tokens: 64000

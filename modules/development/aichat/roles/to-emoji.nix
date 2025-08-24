@@ -3,7 +3,7 @@
 {
     xdg.configFile."aichat/roles/to-emoji.md".text = ''
         ---
-        model: ollama:gemma3:4b
+        model: deepseek:deepseek-chat
 
         ---
         # Emoji Conversion Prompt

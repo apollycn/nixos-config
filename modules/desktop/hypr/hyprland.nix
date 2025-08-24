@@ -65,9 +65,8 @@
                 gaps_in = 5;
                 gaps_out = 10;
                 border_size = 2;
-                "col.active_border" = "$teal";
-                "col.inactive_border" = "$surface1";
                 layout = "dwindle";
+                # Colors moved to extraConfig since they use variables
             };
 
             # Decoration settings
@@ -82,8 +81,7 @@
                     range = 15;
                     render_power = 3;
                     offset = "0, 0";
-                    color = "$teal";
-                    color_inactive = "0xff$baseAlpha";
+                    # Colors moved to extraConfig since they use variables
                 };
                 active_opacity = 0.7;
                 inactive_opacity = 0.7;
@@ -315,7 +313,21 @@
 
         # Submaps in extraConfig to avoid key duplication issues
         extraConfig = ''
+            # Source theme variables first, before using them
             source = ~/.config/hypr/macchiato.conf
+
+            # Now set colors after variables are loaded
+            general {
+                col.active_border = $teal
+                col.inactive_border = $surface1
+            }
+
+            decoration {
+                shadow {
+                    color = $teal
+                    color_inactive = 0xff$baseAlpha
+                }
+            }
 
             # Resize submap
             bind = $mainMod ALT, R, submap, resize

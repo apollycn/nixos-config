@@ -13,7 +13,6 @@
                 name = "top_bar";
                 layer = "top";
                 position = "top";
-                height = 36;
                 spacing = 4;
                 modules-left = [ "hyprland/workspaces" "hyprland/submap" ];
                 modules-center = [ "clock#time" "custom/separator" "clock#week" "custom/separator_dot" "clock#month" "custom/separator" "clock#calendar" ];
@@ -34,7 +33,7 @@
                         "8" = "󰲮";
                         "9" = "󰲰";
                         "10" = "󰿬";
-                        special = "";
+                        special = "";
                     };
                     show-special = true;
                     persistent-workspaces = {
@@ -244,7 +243,7 @@
                     return-type = "json";
                     exec = "echo '{ \"text\":\"󰐥\", \"tooltip\": \"logout menu\" }'";
                     interval = "once";
-                    on-click = "fish -c wlogout_uniqe";
+                    on-click = "fish -c wlogout_unique";
                 };
             }
 
@@ -260,7 +259,7 @@
                 modules-right = [ "keyboard-state" "hyprland/language" ];
 
                 "hyprland/window" = {
-                    format = "👼 {title} 😈";
+                    format = "{title}";
                     max-length = 50;
                 };
 

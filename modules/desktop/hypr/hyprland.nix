@@ -39,8 +39,6 @@
             # Exec once
             exec-once = [
                 "fish -c autostart"
-                "pypr"
-                "waybar"
             ];
 
             # Environment variables
@@ -194,7 +192,7 @@
                 "$mainMod, Y, exec, youtube-music"
                 "$mainMod, D, exec, rofi -show drun"
                 "$mainMod SHIFT, D, exec, firejail --apparmor discord"
-                "$mainMod, ESCAPE, exec, fish -c wlogout_uniqe"
+                "$mainMod, ESCAPE, exec, fish -c wlogout_unique"
                 "$mainMod SHIFT, L, exec, hyprlock"
                 "$mainMod SHIFT, S, exec, fish -c screenshot_to_clipboard"
                 "$mainMod, E, exec, fish -c screenshot_edit"

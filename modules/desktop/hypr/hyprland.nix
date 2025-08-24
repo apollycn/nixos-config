@@ -167,6 +167,12 @@
                 "float, title:^Volume Control$"
             ];
 
+            windowrulev2 = [
+                "float,class:^(org.wezfurlong.wezterm)$"
+                "size 1200 800,class:^(org.wezfurlong.wezterm)$"
+                "center,class:^(org.wezfurlong.wezterm)$"
+            ];
+
             # Main modifier key
             "$mainMod" = "SUPER";
             "$dropterm" = "title:^wezterm_dropdown$";

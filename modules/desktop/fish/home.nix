@@ -134,19 +134,4 @@
             wlogout_unique = builtins.readFile ./functions/wlogout_unique.fish;
         };
     };
-
-    programs.zoxide = {
-        enable = true;
-        enableFishIntegration = true;
-    };
-
-    programs.direnv = {
-        enable = true;
-        enableFishIntegration = true;
-    };
-
-    programs.fzf = {
-        enable = true;
-        enableFishIntegration = true;
-    };
 }

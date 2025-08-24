@@ -14,7 +14,7 @@
     home.packages = with pkgs; [
 	      git
 	      vim
-	      firefox
+	      grapejuice
     ];
 
     programs.home-manager.enable = true;

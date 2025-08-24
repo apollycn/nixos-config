@@ -31,7 +31,7 @@
                     },
                     {
                         source = {
-                            File = '~/nixos-config/assets/lain.gif',
+                            File = '/home/leo/nixos-config/assets/lain.gif',
                         },
                         opacity = 0.02,
                         vertical_align = "Middle",

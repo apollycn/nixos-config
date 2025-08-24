@@ -3,17 +3,17 @@
 {
     programs.wezterm = {
         enable = true;
-
+        
         extraConfig = ''
             local wezterm = require 'wezterm'
             local act = wezterm.action
-            local gpus = wezterm.gui.enumerate_gpus()
             
             return {
                 enable_wayland = true,
                 prefer_egl = true,
                 front_end = "WebGpu",
-                webgpu_preferred_adapter = gpus[2],
+                initial_rows = 24,
+                initial_cols = 88,
                 color_scheme = 'Catppuccin Macchiato',
                 enable_tab_bar = false,
                 inactive_pane_hsb = {
@@ -31,7 +31,7 @@
                     },
                     {
                         source = {
-                            File = '/home/leo/nixos-config/assets/lain.gif',
+                            File = '~/nixos-config/assets/lain.gif',
                         },
                         opacity = 0.02,
                         vertical_align = "Middle",

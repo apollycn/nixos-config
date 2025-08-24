@@ -7,7 +7,7 @@
   
   # Configure aichat
   xdg.configFile."aichat/config.yaml".text = ''
-    model: ollama:gemma3:4b
+    # model: ollama:gemma3:4b
     model: deepseek:deepseek-chat
     keybindings: vi
     function_calling: true

@@ -6,5 +6,7 @@
         ./hypr/home.nix
         ./waybar/home.nix
         ./fish/home.nix        
+        ./starship.nix
+        
     ];
 }

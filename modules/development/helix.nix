@@ -25,8 +25,6 @@
                     render = true;
                 };
 
-                tab-width = 4;
-                
                 statusline = {
                     left = ["mode" "spinner" "file-name" "read-only-indicator" "file-modification-indicator" "separator" "total-line-numbers" "separator" "spacer" "version-control"];
                     right = ["register" "spacer" "diagnostics" "separator" "selections" "separator" "position" "position-percentage" "spacer" "separator" "file-encoding" "file-line-ending" "separator" "file-type"];
@@ -60,6 +58,11 @@
                 "S-left" = ":bp";
                 "A-w" = ":w";
                 "A-r" = ":rl";
+            };
+
+            indent = {
+                tab-width = 4;
+                unit = " ";
             };
         };
         

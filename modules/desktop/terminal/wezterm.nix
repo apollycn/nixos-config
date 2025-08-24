@@ -10,8 +10,8 @@
             
             return {
                 enable_wayland = true,
-                prefer_egl = true,
-                front_end = "WebGpu",
+                prefer_egl = false,
+                front_end = "OpenGL",
                 initial_rows = 24,
                 initial_cols = 88,
                 color_scheme = 'Catppuccin Macchiato',

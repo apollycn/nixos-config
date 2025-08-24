@@ -75,7 +75,7 @@
             # USER AVATAR
             image {
                 monitor = 
-                path = $HOME/Downloads/.face
+                path = $HOME/Downloads/Untitled.face
                 size = 350
                 border_color = $accent
                 rounding = -1

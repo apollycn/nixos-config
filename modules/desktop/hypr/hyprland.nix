@@ -183,7 +183,7 @@
                 "$mainMod, M, exec, pypr toggle_special minimized"
                 "$mainMod CTRL, E, exec, pypr expose"
                 "$mainMod, Z, exec, pypr zoom"
-                "$mainMod, T, exec, nvidia-offload kitty"
+                "$mainMod, T, exec, kitty"
                 "$mainMod SHIFT, T, exec, Telegram"
                 "$mainMod, B, exec, qutebrowser"
                 "$mainMod SHIFT, B, exec, brave"

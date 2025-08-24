@@ -3,6 +3,7 @@
 {
     imports = [
         ./hyprland.nix
-        ./macchiato.nix  
+        ./macchiato.nix
+        ./hypridle.nix  
     ];
 }

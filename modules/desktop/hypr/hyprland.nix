@@ -7,7 +7,7 @@
         settings = {
             # Monitor configuration
             monitor = [
-                "eDP-1,preferred,auto,1.6"
+                "eDP-1,preferred,auto,auto"
                 # "HDMI-A-1,preferred,auto-up,1.6"  # Comment out if not using external monitor
             ];
 

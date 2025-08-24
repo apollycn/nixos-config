@@ -1,6 +1,10 @@
 { ... }:
 
 {
+    imports = [
+        ./macchiato.nix
+    ];
+
     programs.waybar = {
         enable = true;
         settings = [
@@ -445,7 +449,6 @@
         ];
 
         style = ''
-            ${builtins.readFile ./macchiato.css}
             ${builtins.readFile ./style.css}
         '';
     };

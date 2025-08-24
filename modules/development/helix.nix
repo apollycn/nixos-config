@@ -24,6 +24,9 @@
                 indent-guides = {
                     render = true;
                 };
+
+                indent.tab-width = 4;
+                auto-indent = true;
                 
                 statusline = {
                     left = ["mode" "spinner" "file-name" "read-only-indicator" "file-modification-indicator" "separator" "total-line-numbers" "separator" "spacer" "version-control"];

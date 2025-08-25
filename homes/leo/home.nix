@@ -5,6 +5,7 @@
         ../../modules/desktop/home.nix    
         ../../modules/development/home.nix
         ../../modules/services/home.nix        
+        ../../modules/security/home.nix
     ];
 
     home.username = "leo";

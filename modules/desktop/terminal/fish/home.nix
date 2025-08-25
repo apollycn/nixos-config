@@ -37,6 +37,7 @@
             lt = "eza -la --icons --tree --level=2";
             lg = "eza -la --icons --git";
             texwatch = "sh ~/notes/scripts/texwatch.sh";
+            battery = "upower -i /org/freedesktop/UPower/devices/battery_BAT0";
         };
 
         # Interactive shell initialization

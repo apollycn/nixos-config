@@ -1,0 +1,5 @@
+{
+    imports = [
+        ./new-note.nix
+    ];
+}

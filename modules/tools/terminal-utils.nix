@@ -16,7 +16,8 @@
     	bat
     	rsclock
     	cava
-	unzip
-	eza
+	    unzip
+    	eza
+    	latexmk
     ];
 }

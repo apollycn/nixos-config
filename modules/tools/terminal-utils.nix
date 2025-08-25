@@ -21,5 +21,6 @@
         texlive.combined.scheme-medium
         glow
         fzf
+        calibre
     ];
 }

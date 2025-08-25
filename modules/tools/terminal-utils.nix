@@ -19,5 +19,6 @@
 	    unzip
     	eza
     	texlive.combined.scheme-medium
+    	glow
     ];
 }

@@ -18,6 +18,6 @@
     	cava
 	    unzip
     	eza
-    	latexmk
+    	texlive.combined.scheme-medium
     ];
 }

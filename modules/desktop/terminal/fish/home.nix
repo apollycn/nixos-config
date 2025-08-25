@@ -36,6 +36,7 @@
             ll = "eza -la --icons --group-directories-first";
             lt = "eza -la --icons --tree --level=2";
             lg = "eza -la --icons --git";
+            latexwatch = "latexmk -pdf -pvc -C";
         };
 
         # Interactive shell initialization

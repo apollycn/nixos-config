@@ -2,6 +2,6 @@
 
 {
     home.pkgs = [
-        (pkgs.writeShellScriptsBin "new-note" (builtins.readFile ./new-note.sh))
+        (pkgs.writeShellScriptBin "new-note" (builtins.readFile ./new-note.sh))
     ];
 }

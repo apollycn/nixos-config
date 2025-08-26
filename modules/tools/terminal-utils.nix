@@ -22,5 +22,6 @@
         glow
         fzf
         calibre
+        tetris
     ];
 }

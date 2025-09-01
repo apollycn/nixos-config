@@ -17,6 +17,7 @@
         rsclock
         cava
         unzip
+        zip
         eza
         texlive.combined.scheme-medium
         glow

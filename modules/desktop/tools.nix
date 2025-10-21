@@ -39,7 +39,7 @@
 
         # UI components
         waybar
-        rofi-wayland
+        rofi
         dunst
         avizo
         wlogout

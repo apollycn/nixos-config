@@ -6,12 +6,12 @@
         git
         lazygit
         delta
-        license-generator
-        process-compose
-        progress
-        noti
+        # license-generator
+        # process-compose
+        # progress
+        # noti
         ripgrep
-        procs
+        # procs
         tealdeer
         bat
         rsclock

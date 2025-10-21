@@ -1,10 +1,6 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
-    home.packages = with pkgs; [
-        avizo
-    ];
-
     xdg.configFile."avizo/config.ini".text = ''
         [default]
         time = 1.0

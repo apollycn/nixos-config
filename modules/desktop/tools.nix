@@ -41,6 +41,7 @@
         waybar
         rofi-wayland
         dunst
+        avizo
         wlogout
     ];
 }

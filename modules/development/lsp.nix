@@ -9,15 +9,15 @@
     	  nodePackages_latest.yaml-language-server
     	  nodePackages_latest.dockerfile-language-server-nodejs
     	  nodePackages_latest.bash-language-server
-    	  sumneko-lua-language-server
-    	  marksman
+    	  # sumneko-lua-language-server
+    	  # marksman
         markdown-oxide
-    	  nil
-    	  emmet-language-server
+    	  # nil
+    	  # emmet-language-server
     	  docker-compose-language-service
-    	  hyprls
-        jdk11
-        helix-gpt
+    	  # hyprls
+        # jdk11
+        # helix-gpt
         texlab
     ]; 
 }

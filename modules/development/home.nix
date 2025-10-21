@@ -3,6 +3,6 @@
 {
     imports = [
         ./helix.nix
-        ./aichat/home.nix        
+        # ./aichat/home.nix        
     ];
 }

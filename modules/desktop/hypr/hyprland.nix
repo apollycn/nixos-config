@@ -39,6 +39,7 @@
             # Exec once
             exec-once = [
                 "fish -c autostart"
+                "avizo-service"
             ];
 
             # Environment variables

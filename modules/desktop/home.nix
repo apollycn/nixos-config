@@ -7,6 +7,7 @@
         ./pointer.nix
         ./terminal/home.nix
         ./dunst.nix
-                                
+        ./avizo.nix
+                                        
     ];
 }

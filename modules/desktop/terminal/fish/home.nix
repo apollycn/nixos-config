@@ -107,7 +107,6 @@
     
         # Custom functions
         functions = {
-            autostart = builtins.readFile ./functions/autostart.fish;
             aichat_fish = builtins.readFile ./functions/aichat_fish.fish;
             airplane_mode_toggle = builtins.readFile ./functions/airplane_mode_toggle.fish;
             archive_preview = builtins.readFile ./functions/archive_preview.fish;

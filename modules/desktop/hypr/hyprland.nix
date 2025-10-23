@@ -119,9 +119,11 @@
             };
 
             # Gestures
-            gestures = {
-                workspace_swipe = true;
-            };
+            gesture = [
+                "3, horizontal, workspace"
+                "3, up, mod: SUPER, scale: 1.5, fullscreen"
+                "3, up, scale: 1.5, float"  
+            ];
 
             # Misc settings
             misc = {
